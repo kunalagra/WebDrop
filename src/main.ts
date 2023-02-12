@@ -50,18 +50,14 @@ for (const comp of comps) {
 Vue.component('Header', Header)
 Vue.directive('linkified', linkify)
 
-let announceURLs = [
+const announceURLs = [
   'wss://tracker.openwebtorrent.com',
-  'wss://wsswt.herokuapp.com',
+  // 'wss://wsswt.herokuapp.com',
   'wss://tracker.btorrent.xyz',
-  'wss://tracker.sloppyta.co:443/',
+  // 'wss://tracker.sloppyta.co:443/',
   'wss://tracker.novage.com.ua:443/'
   // 'ws://192.168.100.7:5000'
 ]
-
-if (window.location.hostname === 'localhost') {
-  announceURLs = ['ws://0.0.0.0:5000']
-}
 
 const INTERNET_ROOM_CODE_LENGTH = 4
 

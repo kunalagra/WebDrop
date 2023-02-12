@@ -214,30 +214,11 @@ export default {
 
       let warningCount = 0
       let trackerConnected = false
-      let warningMsg = false
+      const warningMsg = false
 
       p2pt.on('trackerwarning', (error, stats) => {
         warningCount++
         console.log(error)
-
-        if (warningCount >= stats.total && !trackerConnected && !warningMsg) {
-          warningMsg = this.$buefy.snackbar.open({
-            message: 'We couldn\'t connect to any WebTorrent trackers. Your ISP might be blocking them 🤔',
-            position: 'is-top',
-            type: 'is-danger',
-            queue: false,
-            indefinite: true,
-            actionText: 'Retry',
-            onAction: () => {
-              if (!trackerConnected) {
-                this.$store.commit('destroyP2PT')
-                p2pt.destroy()
-                this.startP2PT(identifier)
-              }
-              warningMsg.close()
-            }
-          })
-        }
       })
 
       p2pt.on('trackerconnect', () => {
