@@ -10,7 +10,7 @@
   "dependencies": {
     "@beyonk/google-fonts-webpack-plugin": "^1.4",
     "buefy": "^0.8.19",
-    "hash-sum": "^1.0.2",
+    "hash-sum": "^2.0.0",
     "nosleep.js": "^0.11.0",
     "p2pt": "https://github.com/kunalagra/p2pt",
     "public-ip": "https://github.com/subins2000/public-ip.git#v6or4",
