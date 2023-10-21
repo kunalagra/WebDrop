@@ -105,7 +105,7 @@
                 <p id="drop-area">Drop your files here or click to upload</p>
               </b-upload>
               <center>
-                <p>Open <a href="https://WebDrop.Space">WebDrop.Space</a> on your devices to join this room. Devices under the same WiFi/network will auto join the same room.</p>
+                <p>Open <a href="https://WebDrop.onrender.com">WebDrop</a> on your devices to join this room. Devices under the same WiFi/network will auto join the same room.</p>
                 <p>Do you want to transfer files over internet ?<br/><earth-icon></earth-icon><br/><router-link to="/room">Share Invite Link or Join Room</router-link></p>
               </center>
             </template>
@@ -189,7 +189,7 @@
           </div>
           <p v-show="usersCount === 0">
             <center class="content">
-              <p>Open <a href="https://WebDrop.Space">WebDrop.Space</a> on your devices and make sure they are connected to the same WiFi/network.</p>
+              <p>Open <a href="https://WebDrop.onrender.com">WebDrop</a> on your devices and make sure they are connected to the same WiFi/network.</p>
               <p>Do you want to transfer files over internet ?<br/><earth-icon></earth-icon><br/><router-link to="/room">Share Invite Link or Join Room</router-link></p>
             </center>
           </p>
