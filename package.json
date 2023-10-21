@@ -12,7 +12,7 @@
     "buefy": "^0.8.19",
     "hash-sum": "^1.0.2",
     "nosleep.js": "^0.11.0",
-    "p2pt": "https://github.com/kunalagra/p2pt",
+    "p2pt": "https://github.com/subins2000/p2pt#modernify",
     "public-ip": "https://github.com/subins2000/public-ip.git#v6or4",
     "qr-creator": "^1.0.0",
     "register-service-worker": "^1.7.1",
